@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 .card {
   display: block;
@@ -12,6 +12,7 @@
     padding-bottom: $base-padding;
     font-weight: bold;
   }
+
   .card-body {
     font-size: $base-font-size;
 

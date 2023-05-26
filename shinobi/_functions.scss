@@ -1,0 +1,27 @@
+@function light-complement($color) {
+  $complement: complement($color);
+  $light-complement: lighten($complement, 10%);
+  @return $light-complement;
+}
+
+@function generate-spacing-utility($prefix, $base-variable) {
+  $map: (
+    "prefix": $prefix,
+    "values": (
+      0: $base-variable * 0,
+      1: $base-variable * 0.25,
+      2: $base-variable * 0.5,
+      3: $base-variable * 0.75,
+      4: $base-variable * 1,
+      5: $base-variable * 1.25,
+      6: $base-variable * 1.5,
+      7: $base-variable * 1.75,
+      8: $base-variable * 2,
+      9: $base-variable * 2.25,
+      10: $base-variable * 2.5,
+      11: $base-variable * 2.75,
+      12: $base-variable * 3,
+    ),
+  );
+  @return $map;
+}
